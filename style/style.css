@@ -1,0 +1,355 @@
+:root {
+  --blue: #66e2dc;
+  --orange: #fa7453;
+  --yellow: #ffb964;
+  --white: #fcfaf9;
+  --light-black: #191826;
+}
+
+body {
+  background: var(--white);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--light-black);
+  letter-spacing: -0.028rem;
+}
+
+.main-content {
+  padding: 64px 24px 68px 24px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.content img {
+  padding: 40px 204.76px 0 24.15px;
+}
+.main-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  color: var(--light-black);
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.content {
+  background-image: url(../assets/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: -10% 130%;
+}
+
+.mobile-picture {
+  background: var(--light-black);
+  border-radius: 12px;
+  padding-bottom: 500px;
+  z-index: -1;
+}
+.mobile-picture .second-ilustartion {
+  width: 280px;
+  height: 420px;
+  margin-left: 40px;
+  position: absolute;
+  z-index: 1;
+}
+.container-card .first-ilustration {
+  width: 208px;
+  height: 430px;
+  position: absolute;
+  z-index: 9;
+  margin-left: 80px;
+  margin-top: -100px;
+}
+
+.premium {
+  background: var(--orange);
+  border-radius: 12px;
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 48px 37px;
+  z-index: 999;
+  position: relative;
+  margin-top: -120px;
+}
+.premium h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: var(--white);
+}
+.premium p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  color: var(--white);
+  padding-top: 12px;
+  padding-bottom: 36px;
+}
+.price h1 {
+  font-size: 4.063rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  color: var(--white);
+}
+.price p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: -0.2px;
+  padding-left: 16px;
+}
+.price {
+  display: flex;
+}
+button {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: -0.18px;
+  border: none;
+}
+.button1 {
+  background: var(--light-black);
+  color: var(--white);
+  margin-bottom: 16px;
+  padding: 15px 77px;
+}
+.button2 {
+  background: var(--white);
+  padding: 15px 57px 14px 59px;
+}
+.button1 img {
+  padding-right: 7.92px;
+  transform: translateY(10%);
+}
+.button2 img {
+  padding-right: 7.8px;
+  transform: translateY(15%);
+}
+
+.main-footer {
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 64px 24px 80px;
+}
+.address {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: var(--light-black);
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+.address a {
+  font-weight: 700;
+  color: var(--light-black);
+  display: flex;
+  text-decoration: none;
+}
+.icons {
+  padding-right: 20px;
+}
+
+.button1:hover {
+  background: var(--blue);
+  cursor: pointer;
+}
+.button2:hover {
+  background: var(--yellow);
+  cursor: pointer;
+}
+.icons:hover path {
+  fill: var(--orange);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.046rem;
+  }
+
+  .main-content {
+    padding: 95px 214px 111px 39px;
+  }
+  .content img {
+    padding: 62px 582.76px 0 39.15px;
+  }
+  .main-content p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding-top: 28px;
+    padding-bottom: 111px;
+  }
+
+  .content {
+    background-image: url(../assets/bg-pattern-1.svg),
+      url(../assets/bg-main-tablet.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -30px right -40px, 110% 180%;
+    background-size: 266px 400px, 983px 808px;
+  }
+
+  .mobile-picture {
+    margin-left: 33px;
+    margin-right: 39px;
+    padding-bottom: 640px;
+    z-index: -1;
+  }
+  .mobile-picture .second-ilustartion {
+    margin-left: 229px;
+    margin-top: -40px;
+    width: 312px;
+    height: 468px;
+    position: absolute;
+    z-index: 1;
+  }
+  .container-card .first-ilustration {
+    width: 270px;
+    height: 556px;
+    position: absolute;
+    z-index: 9;
+    margin-left: 64px;
+    margin-top: -100px;
+  }
+
+  .premium {
+    padding: 48px 49px;
+    z-index: 999;
+    position: relative;
+    margin-top: -450px;
+    margin-left: 272px;
+    width: 399px;
+  }
+  /* Footer */
+  .main-footer {
+    padding: 87px 39px 20px 33px;
+  }
+  .footer-content {
+    display: flex;
+  }
+  .address {
+    padding-top: 32px;
+    padding-right: 280px;
+  }
+  .address a {
+    display: inline;
+  }
+  .footer-icons {
+    display: flex;
+    padding-top: 94px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-content h1 {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.063rem;
+  }
+
+  .main-content {
+    padding: 127px 260px 127px 165px;
+  }
+  .content img {
+    padding: 62px 815.76px 0 166.15px;
+  }
+  .main-content p {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    padding-top: 40px;
+    padding-bottom: 127px;
+    padding-right: 190px;
+  }
+
+  .content {
+    background-image: url(../assets/bg-pattern-1.svg), none;
+    background-repeat: no-repeat;
+    background-position: top -30px right 2px;
+    background-size: 312px 468px;
+  }
+
+  body {
+    background-image: url(../assets/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 70% 110%;
+    background-size: 1913px 2058px;
+  }
+
+  .mobile-picture {
+    margin-left: 165px;
+    margin-right: 165px;
+    padding-bottom: 600px;
+    width: 1110px;
+  }
+  .mobile-picture .second-ilustartion {
+    margin-left: 336px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .container-card .first-ilustration {
+    width: 312px;
+    height: 642px;
+    position: absolute;
+    z-index: 9;
+    margin-left: 102px;
+    margin-top: -213px;
+  }
+
+  .premium {
+    padding: 58px 59px 48px 54px;
+    z-index: 999;
+    position: relative;
+    margin-top: -510px;
+    margin-left: 734px;
+    width: 446px;
+    height: 625px;
+  }
+  .premium h2 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+  .premium p {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    padding-top: 22px;
+    padding-bottom: 39px;
+  }
+  .price h1 {
+    line-height: 3.25rem;
+  }
+  .button1 {
+    padding: 15px 90px 14px 95px;
+  }
+  .button2 {
+    padding: 15px 75.5px 14px 74.5px;
+  }
+
+  /* Footer */
+  .main-footer {
+    display: flex;
+    padding: 0px 165px 0px 166.15px;
+  }
+  .main-footer img {
+    width: 146px;
+    height: 32px;
+    margin-top: 87px;
+  }
+  .address {
+    padding: 87px 359px 91px 137.76px;
+  }
+  .footer-icons {
+    padding-top: 116px;
+    padding-bottom: 121px;
+  }
+}
